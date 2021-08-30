@@ -1,0 +1,46 @@
+PODS:
+  - Alamofire (5.4.1)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
+  - lottie-ios (3.1.9)
+  - MarqueeLabel (4.0.5)
+  - ProgressHUD (13.4)
+  - RxSwift (5.1.1)
+  - SnapKit (5.0.1)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher (~> 5.0)
+  - lottie-ios
+  - MarqueeLabel
+  - ProgressHUD
+  - RxSwift (~> 5)
+  - SnapKit
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - lottie-ios
+    - MarqueeLabel
+    - ProgressHUD
+    - RxSwift
+    - SnapKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
+  MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
+  ProgressHUD: 137a7fc677487c5581668f4490563124fb35c232
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: d663a30ad73664a845ec306c10dccfe2cea3c30b
+
+COCOAPODS: 1.10.1

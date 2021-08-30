@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		475ECF9325EFBB4400668DB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ECF9225EFBB4400668DB8 /* AppDelegate.swift */; };
+		475ECF9525EFBB4400668DB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ECF9425EFBB4400668DB8 /* SceneDelegate.swift */; };
+		475ECF9725EFBB4400668DB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ECF9625EFBB4400668DB8 /* ViewController.swift */; };
+		475ECF9A25EFBB4400668DB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475ECF9825EFBB4400668DB8 /* Main.storyboard */; };
+		475ECF9C25EFBB4700668DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475ECF9B25EFBB4700668DB8 /* Assets.xcassets */; };
+		475ECF9F25EFBB4700668DB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475ECF9D25EFBB4700668DB8 /* LaunchScreen.storyboard */; };
+		475ECFAC25EFC17F00668DB8 /* FeedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ECFAB25EFC17F00668DB8 /* FeedPageViewController.swift */; };
+		475ECFB025EFC19F00668DB8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ECFAF25EFC19F00668DB8 /* FeedViewController.swift */; };
+		475ECFD325EFD14E00668DB8 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ECFD225EFD14D00668DB8 /* APIManager.swift */; };
+		475ECFE025EFD23600668DB8 /* FeedFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ECFDF25EFD23600668DB8 /* FeedFetcherService.swift */; };
+		475ECFE325EFD2D900668DB8 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ECFE225EFD2D900668DB8 /* Connection.swift */; };
+		475ECFE625EFD31B00668DB8 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ECFE525EFD31B00668DB8 /* Feed.swift */; };
+		475ECFE925EFD33C00668DB8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ECFE825EFD33C00668DB8 /* Result.swift */; };
+		475ECFEC25EFD37D00668DB8 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ECFEB25EFD37D00668DB8 /* HTTPRequest.swift */; };
+		475ECFEF25EFD3B900668DB8 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ECFEE25EFD3B900668DB8 /* HTTPError.swift */; };
+		475ECFFC25EFD54800668DB8 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ECFFB25EFD54800668DB8 /* FeedViewModel.swift */; };
+		475ECFFF25EFE0FF00668DB8 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ECFFE25EFE0FF00668DB8 /* FeedTableViewCell.swift */; };
+		475ED00225EFE40800668DB8 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ED00125EFE40800668DB8 /* VideoPlayerView.swift */; };
+		475ED00625EFE50E00668DB8 /* VideoCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475ED00525EFE50E00668DB8 /* VideoCacheManager.swift */; };
+		475ED00A25EFE81900668DB8 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 475ED00925EFE81900668DB8 /* FeedTableViewCell.xib */; };
+		5438EB5875AA9855F97FE3FC /* Pods_TikTak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299F85609D5C860DE7D56BD9 /* Pods_TikTak.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		299F85609D5C860DE7D56BD9 /* Pods_TikTak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikTak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36007E3CCD7909B6A885E3CF /* Pods-TikTak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTak.debug.xcconfig"; path = "Target Support Files/Pods-TikTak/Pods-TikTak.debug.xcconfig"; sourceTree = "<group>"; };
+		475ECF8F25EFBB4400668DB8 /* TikTak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		475ECF9225EFBB4400668DB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		475ECF9425EFBB4400668DB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		475ECF9625EFBB4400668DB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		475ECF9925EFBB4400668DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		475ECF9B25EFBB4700668DB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		475ECF9E25EFBB4700668DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		475ECFA025EFBB4700668DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		475ECFAB25EFC17F00668DB8 /* FeedPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPageViewController.swift; sourceTree = "<group>"; };
+		475ECFAF25EFC19F00668DB8 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		475ECFD225EFD14D00668DB8 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		475ECFDF25EFD23600668DB8 /* FeedFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedFetcherService.swift; sourceTree = "<group>"; };
+		475ECFE225EFD2D900668DB8 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		475ECFE525EFD31B00668DB8 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		475ECFE825EFD33C00668DB8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		475ECFEB25EFD37D00668DB8 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		475ECFEE25EFD3B900668DB8 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		475ECFFB25EFD54800668DB8 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		475ECFFE25EFE0FF00668DB8 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		475ED00125EFE40800668DB8 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		475ED00525EFE50E00668DB8 /* VideoCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCacheManager.swift; sourceTree = "<group>"; };
+		475ED00925EFE81900668DB8 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		B1EEEC27C0CF59EB201156E2 /* Pods-TikTak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTak.release.xcconfig"; path = "Target Support Files/Pods-TikTak/Pods-TikTak.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		475ECF8C25EFBB4400668DB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5438EB5875AA9855F97FE3FC /* Pods_TikTak.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B81BEC0642602E05AC321B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				299F85609D5C860DE7D56BD9 /* Pods_TikTak.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		475ECF8625EFBB4400668DB8 = {
+			isa = PBXGroup;
+			children = (
+				475ECF9125EFBB4400668DB8 /* TikTak */,
+				475ECF9025EFBB4400668DB8 /* Products */,
+				D7256E94C9777547BC3B0316 /* Pods */,
+				1B81BEC0642602E05AC321B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		475ECF9025EFBB4400668DB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				475ECF8F25EFBB4400668DB8 /* TikTak.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		475ECF9125EFBB4400668DB8 /* TikTak */ = {
+			isa = PBXGroup;
+			children = (
+				475ECF9225EFBB4400668DB8 /* AppDelegate.swift */,
+				475ECF9425EFBB4400668DB8 /* SceneDelegate.swift */,
+				475ECF9625EFBB4400668DB8 /* ViewController.swift */,
+				475ED00425EFE4F500668DB8 /* VideoCache */,
+				475ECFA725EFC13600668DB8 /* Feeds */,
+				475ECFD125EFD13100668DB8 /* Helper */,
+				475ECF9825EFBB4400668DB8 /* Main.storyboard */,
+				475ECF9B25EFBB4700668DB8 /* Assets.xcassets */,
+				475ECF9D25EFBB4700668DB8 /* LaunchScreen.storyboard */,
+				475ECFA025EFBB4700668DB8 /* Info.plist */,
+			);
+			path = TikTak;
+			sourceTree = "<group>";
+		};
+		475ECFA725EFC13600668DB8 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				475ECFAA25EFC16500668DB8 /* Controller */,
+				475ECFA925EFC16500668DB8 /* Model */,
+				475ECFA825EFC16500668DB8 /* View */,
+			);
+			path = Feeds;
+			sourceTree = "<group>";
+		};
+		475ECFA825EFC16500668DB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				475ECFFB25EFD54800668DB8 /* FeedViewModel.swift */,
+				475ECFFE25EFE0FF00668DB8 /* FeedTableViewCell.swift */,
+				475ED00925EFE81900668DB8 /* FeedTableViewCell.xib */,
+				475ED00125EFE40800668DB8 /* VideoPlayerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		475ECFA925EFC16500668DB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				475ECFE525EFD31B00668DB8 /* Feed.swift */,
+				475ECFE825EFD33C00668DB8 /* Result.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		475ECFAA25EFC16500668DB8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				475ECFAB25EFC17F00668DB8 /* FeedPageViewController.swift */,
+				475ECFAF25EFC19F00668DB8 /* FeedViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		475ECFD125EFD13100668DB8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				475ECFD225EFD14D00668DB8 /* APIManager.swift */,
+				475ECFDF25EFD23600668DB8 /* FeedFetcherService.swift */,
+				475ECFE225EFD2D900668DB8 /* Connection.swift */,
+				475ECFEB25EFD37D00668DB8 /* HTTPRequest.swift */,
+				475ECFEE25EFD3B900668DB8 /* HTTPError.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		475ED00425EFE4F500668DB8 /* VideoCache */ = {
+			isa = PBXGroup;
+			children = (
+				475ED00525EFE50E00668DB8 /* VideoCacheManager.swift */,
+			);
+			path = VideoCache;
+			sourceTree = "<group>";
+		};
+		D7256E94C9777547BC3B0316 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36007E3CCD7909B6A885E3CF /* Pods-TikTak.debug.xcconfig */,
+				B1EEEC27C0CF59EB201156E2 /* Pods-TikTak.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		475ECF8E25EFBB4400668DB8 /* TikTak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 475ECFA325EFBB4700668DB8 /* Build configuration list for PBXNativeTarget "TikTak" */;
+			buildPhases = (
+				3EF6184420A7C47499E4F2AE /* [CP] Check Pods Manifest.lock */,
+				475ECF8B25EFBB4400668DB8 /* Sources */,
+				475ECF8C25EFBB4400668DB8 /* Frameworks */,
+				475ECF8D25EFBB4400668DB8 /* Resources */,
+				B29C2EC9BF3C99BBF1DBA381 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TikTak;
+			productName = TikTak;
+			productReference = 475ECF8F25EFBB4400668DB8 /* TikTak.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		475ECF8725EFBB4400668DB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					475ECF8E25EFBB4400668DB8 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 475ECF8A25EFBB4400668DB8 /* Build configuration list for PBXProject "TikTak" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 475ECF8625EFBB4400668DB8;
+			productRefGroup = 475ECF9025EFBB4400668DB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				475ECF8E25EFBB4400668DB8 /* TikTak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		475ECF8D25EFBB4400668DB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				475ECF9F25EFBB4700668DB8 /* LaunchScreen.storyboard in Resources */,
+				475ECF9C25EFBB4700668DB8 /* Assets.xcassets in Resources */,
+				475ED00A25EFE81900668DB8 /* FeedTableViewCell.xib in Resources */,
+				475ECF9A25EFBB4400668DB8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EF6184420A7C47499E4F2AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikTak-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B29C2EC9BF3C99BBF1DBA381 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TikTak/Pods-TikTak-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TikTak/Pods-TikTak-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TikTak/Pods-TikTak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		475ECF8B25EFBB4400668DB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				475ECFD325EFD14E00668DB8 /* APIManager.swift in Sources */,
+				475ECFEC25EFD37D00668DB8 /* HTTPRequest.swift in Sources */,
+				475ECFE625EFD31B00668DB8 /* Feed.swift in Sources */,
+				475ECFE025EFD23600668DB8 /* FeedFetcherService.swift in Sources */,
+				475ECFEF25EFD3B900668DB8 /* HTTPError.swift in Sources */,
+				475ECF9725EFBB4400668DB8 /* ViewController.swift in Sources */,
+				475ECFE325EFD2D900668DB8 /* Connection.swift in Sources */,
+				475ECF9325EFBB4400668DB8 /* AppDelegate.swift in Sources */,
+				475ED00625EFE50E00668DB8 /* VideoCacheManager.swift in Sources */,
+				475ECFE925EFD33C00668DB8 /* Result.swift in Sources */,
+				475ECFFF25EFE0FF00668DB8 /* FeedTableViewCell.swift in Sources */,
+				475ECFB025EFC19F00668DB8 /* FeedViewController.swift in Sources */,
+				475ECF9525EFBB4400668DB8 /* SceneDelegate.swift in Sources */,
+				475ECFAC25EFC17F00668DB8 /* FeedPageViewController.swift in Sources */,
+				475ECFFC25EFD54800668DB8 /* FeedViewModel.swift in Sources */,
+				475ED00225EFE40800668DB8 /* VideoPlayerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		475ECF9825EFBB4400668DB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				475ECF9925EFBB4400668DB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		475ECF9D25EFBB4700668DB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				475ECF9E25EFBB4700668DB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		475ECFA125EFBB4700668DB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		475ECFA225EFBB4700668DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		475ECFA425EFBB4700668DB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36007E3CCD7909B6A885E3CF /* Pods-TikTak.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TikTak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siva.TikTak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		475ECFA525EFBB4700668DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1EEEC27C0CF59EB201156E2 /* Pods-TikTak.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TikTak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siva.TikTak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		475ECF8A25EFBB4400668DB8 /* Build configuration list for PBXProject "TikTak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				475ECFA125EFBB4700668DB8 /* Debug */,
+				475ECFA225EFBB4700668DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		475ECFA325EFBB4700668DB8 /* Build configuration list for PBXNativeTarget "TikTak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				475ECFA425EFBB4700668DB8 /* Debug */,
+				475ECFA525EFBB4700668DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 475ECF8725EFBB4400668DB8 /* Project object */;
+}
